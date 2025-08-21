@@ -1,0 +1,224 @@
+/* Contenedor Principal */
+.inventory {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Encabezado */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .catalog-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .catalog-btn:hover {
+    background-color: #b52d2b;
+  }
+  
+  /* Resumen del Inventario */
+  .inventory-summary {
+    background-color: #f8d7da;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #d9534f;
+    margin-bottom: 20px;
+  }
+  
+  .inventory-summary h2 {
+    color: #d9534f;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .inventory-summary p {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  /* Barra de Categorías y Búsqueda */
+  .category-bar {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #d9534f;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .search-bar:focus {
+    border-color: #b52d2b;
+  }
+  
+  .category-dropdown {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #d9534f;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    transition: border-color 0.3s;
+  }
+  
+  .category-dropdown:focus {
+    border-color: #b52d2b;
+  }
+  
+  /* Botón Mostrar/Ocultar Formulario */
+  .toggle-form-btn {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-form-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Formulario de Productos */
+  .inventory-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .inventory-form h3 {
+    grid-column: span 2;
+    color: #d9534f;
+    font-size: 20px;
+  }
+  
+  .inventory-form input,
+  .inventory-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .inventory-form input:focus,
+  .inventory-form select:focus {
+    border-color: #d9534f;
+  }
+  
+  .add-btn {
+    grid-column: span 2;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-btn:hover {
+    background-color: #b52d2b;
+  }
+  
+  /* Tabla de Productos */
+  .inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .inventory-table th,
+  .inventory-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .inventory-table th {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .inventory-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .inventory-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .edit-btn {
+    background-color: #00ab41;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #00ab41;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .category-bar {
+      flex-direction: column;
+    }
+  
+    .inventory-form {
+      grid-template-columns: 1fr;
+    }
+  }
+  

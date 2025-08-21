@@ -1,0 +1,16 @@
+{
+  "name": "tienda_exito_catalogo_actualizado",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
+  }
+}
