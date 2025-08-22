@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import store from './pages/store';
 import { CartProvider } from './User/CartContext';
-import AppRoutes from './AppRoutes';
+import AppRoutes from './pages/routes/AppRoutes';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

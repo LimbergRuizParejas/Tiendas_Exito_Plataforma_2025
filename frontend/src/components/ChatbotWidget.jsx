@@ -4,7 +4,7 @@ import './ChatbotWidget.css';
 const ChatbotWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { from: 'bot', text: '¡Hola! Soy el asistente virtual, ¿en qué puedo ayudarte?' }
+    { from: 'bot', text: '¡Hola! Bienvenido a Tiendas Exito Soy el asistente virtual, ¿en qué puedo ayudarte?' }
   ]);
   const [input, setInput] = useState('');
 
@@ -27,7 +27,7 @@ const ChatbotWidget = () => {
   return (
     <div className={`chatbot-widget ${isOpen ? 'open' : ''}`}>
       <div className="chatbot-header" onClick={() => setIsOpen(!isOpen)}>
-        🤖 Asistente
+        🤖 Asistente De Tiendas Exito
       </div>
       {isOpen && (
         <div className="chatbot-body">
